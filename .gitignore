@@ -1,0 +1,25 @@
+# Virtual environment
+venv/
+myenv.venv/
+
+# Node modules (bahut badi folder, kabhi upload mat karo)
+frontend/node_modules/
+
+# Large data files
+data/*.pkl
+data/*.npz
+
+# Trained models (bade hote hain, optional — agar chhote hain to rakh sakte ho)
+model/*.keras
+model/*.h5
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test images (optional, inhe rakhna chaho to ye lines hata do)
+test_*.png
