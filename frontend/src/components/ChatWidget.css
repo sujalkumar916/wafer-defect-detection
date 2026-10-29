@@ -1,0 +1,135 @@
+.chat-widget {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 50;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.chat-fab {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #2DD4BF;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(45, 212, 191, 0.35);
+}
+
+.chat-panel {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  width: 360px;
+  max-width: calc(100vw - 48px);
+  height: 500px;
+  max-height: calc(100vh - 120px);
+  background: #12161B;
+  border: 1px solid #232A32;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.chat-header {
+  background: #0E1217;
+  color: #2DD4BF;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #232A32;
+}
+
+.chat-close {
+  background: none;
+  border: none;
+  color: #7A8690;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.chat-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-bubble {
+  max-width: 88%;
+  padding: 9px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.chat-bubble.bot {
+  background: #1A1F25;
+  color: #E4E9ED;
+  align-self: flex-start;
+}
+
+.chat-bubble.user {
+  background: #2DD4BF;
+  color: #04201C;
+  align-self: flex-end;
+}
+
+.chat-chips {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 8px 10px;
+  border-top: 1px solid #232A32;
+  scrollbar-width: thin;
+}
+
+.chat-chip {
+  flex: 0 0 auto;
+  background: #0E1217;
+  border: 1px solid #232A32;
+  color: #9AA6B0;
+  font-family: inherit;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.chat-chip:hover {
+  border-color: #2DD4BF;
+  color: #2DD4BF;
+}
+
+.chat-input-row {
+  display: flex;
+  border-top: 1px solid #232A32;
+}
+
+.chat-input-row input {
+  flex: 1;
+  background: #0E1217;
+  border: none;
+  color: #E4E9ED;
+  padding: 12px;
+  font-size: 13px;
+  outline: none;
+}
+
+.chat-input-row button {
+  background: #2DD4BF;
+  color: #04201C;
+  border: none;
+  padding: 0 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
